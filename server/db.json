@@ -1,30 +1,16 @@
 {
   "target-rem": [
     {
-      "targetRem": 8,
+      "targetRem": 10,
       "id": 1
     }
   ],
   "days": [
     {
-      "dayNum": 1,
+      "dayNum": 0,
       "id": 1
     }
   ],
   "words": [
-    {
-      "day": 2,
-      "eng": "wow",
-      "kor": "와우",
-      "rem": 0,
-      "id": 1
-    },
-    {
-      "day": 1,
-      "eng": "hello",
-      "kor": "안녕",
-      "rem": 6,
-      "id": 2
-    }
   ]
 }

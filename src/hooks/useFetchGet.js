@@ -6,19 +6,17 @@ export default function useFetchGet(URL) {
     const [data, setData] = useState(null);
     const navError = useNavError();
     
-    useEffect(async ()=>{
+    useEffect(()=>{
         if(!data){
-            // console.log('get', URL);
-            try {
-                const res = await axiosAPI.get(URL);
-                res.data.length ? setData(res.data) : setData('none');
-            } catch (err){
-                navError(err);
-            }
+            axiosAPI.get(URL)
+            .then(res=>{
+                res.data.length ? setData(res.data) : setData('none')
+            })
+            .catch(navError)
         }
     }, [data])
 
-    useEffect(async ()=>{
+    useEffect(()=>{
         setData(null);
     }, [URL])
 
