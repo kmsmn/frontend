@@ -1,5 +1,4 @@
 {
-  "build": "cross-env NODE_PATH=src react-scripts build",
   "name": "fourth",
   "version": "0.1.0",
   "engines": {
@@ -52,5 +51,6 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3"
-  }
+  },
+  "proxy": "http://localhost:3001"
 }
